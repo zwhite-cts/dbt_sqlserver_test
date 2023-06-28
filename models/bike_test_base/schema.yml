@@ -1,0 +1,39 @@
+name: base
+version: 2
+
+sources:
+  - name: bt_prod
+    database: testDB
+    schema: production
+    tables:
+      - name: brands
+        identifier: brands
+        description: "Bike Store test brand data"      
+      - name: categories
+        identifier: categories
+        description: "Bike Store test categories data"
+      - name: products
+        identifier: products
+        description: "Bike Store test products data"        
+      - name: stocks
+        identifier: stocks
+        description: "Bike Store test stocks data"
+  - name: bt_sales
+    database: testDB
+    schema: sales
+    tables:
+      - name: customers
+        identifier: customers
+        description: "Bike Store test customers data"      
+      - name: order_items
+        identifier: order_items
+        description: "Bike Store test order items data"
+      - name: orders
+        identifier: orders
+        description: "Bike Store test orders data"        
+      - name: staffs
+        identifier: staffs
+        description: "Bike Store test staffs data"
+      - name: stores
+        identifier: stores
+        description: "Bike Store test stores data"
