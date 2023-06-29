@@ -34,5 +34,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_sqlserver_test:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    bike_test_stg:
       +materialized: view
