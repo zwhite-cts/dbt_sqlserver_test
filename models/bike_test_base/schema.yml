@@ -1,6 +1,190 @@
 name: base
 version: 2
 
+models:
+  - name: base_bt_prod_brands
+    description: ""
+    columns:
+      - name: brand_id
+        description: ""
+
+      - name: brand_name
+        description: ""
+
+  - name: base_bt_prod_categories
+    description: ""
+    columns:
+      - name: category_id
+        description: ""
+
+      - name: category_name
+        description: ""
+
+  - name: base_bt_prod_products
+    description: ""
+    columns:
+      - name: product_id
+        description: ""
+
+      - name: product_name
+        description: ""
+
+      - name: brand_id
+        description: ""
+
+      - name: category_id
+        description: ""
+
+      - name: model_year
+        description: ""
+
+      - name: list_price
+        description: ""
+
+  - name: base_bt_prod_stocks
+    description: ""
+    columns:
+      - name: store_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: quantity
+        description: ""
+
+  - name: base_bt_sales_customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: street
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: zip_code
+        description: ""
+
+  - name: base_bt_sales_order_items
+    description: ""
+    columns:
+      - name: order_id
+        description: ""
+
+      - name: item_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: quantity
+        description: ""
+
+      - name: list_price
+        description: ""
+
+      - name: discount
+        description: ""
+
+  - name: base_bt_sales_orders
+    description: ""
+    columns:
+      - name: order_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: order_date
+        description: ""
+
+      - name: required_date
+        description: ""
+
+      - name: shipped_date
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: staff_id
+        description: ""
+
+  - name: base_bt_sales_staffs
+    description: ""
+    columns:
+      - name: staff_id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: active
+        description: ""
+
+      - name: store_id
+        description: ""
+
+      - name: manager_id
+        description: ""
+
+  - name: base_bt_sales_stores
+    description: ""
+    columns:
+      - name: store_id
+        description: ""
+
+      - name: store_name
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: email
+        description: ""
+
+      - name: street
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: zip_code
+        description: ""
+
 sources:
   - name: bt_prod
     database: testDB
